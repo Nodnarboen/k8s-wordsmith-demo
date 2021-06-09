@@ -13,4 +13,4 @@ services:
   web:
     image: dockersamples/k8s-wordsmith-web
     ports:
-     - "8080:80"
+     - "8082:80"
