@@ -43,8 +43,8 @@ metadata:
     app: words-api
 spec:
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 8082
+      targetPort: 8082
       name: api
   selector:
     app: words-api
@@ -70,7 +70,7 @@ spec:
       - name: words
         image: dockersamples/k8s-wordsmith-api
         ports:
-        - containerPort: 8080
+        - containerPort: 8082
           name: api
 ---
 apiVersion: v1
